@@ -15,12 +15,12 @@
     <p class="orientacaoTitulo">Índice de Massa Corporal.</p>
     <form action="/" id="formulario" method="POST">
       <label for="peso">Peso</label>
-      <input type="text" id="peso" name="peso" placeholder="Ex: 95">
+      <input type="text" id="peso" name="peso" placeholder="Ex: 95" onkeydown="handleKeyDown(event)">
       <label for="altura">Altura</label>
-      <input type="text" id="altura" name="altura" placeholder="Ex: 195">
+      <input type="text" id="altura" name="altura" placeholder="Ex: 195" onkeydown="handleKeyDown(event)">
       <button onclick="calcular()" type="button" class="btn">Enviar</button>
     </form>
-    <div ><p class="resultado"> </p></div>
+    <div><p class="resultado"> </p></div>
   </section>
   <script src="./assets/js/main.js"></script>
 </body>
