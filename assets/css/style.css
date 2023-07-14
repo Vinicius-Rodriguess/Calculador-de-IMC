@@ -91,3 +91,20 @@ form label {
   padding: 5px;
   margin: 0 10px;
 }
+
+@media (max-width: 500px){
+  
+  .container {
+    padding: 20px 5px 0px 5px;
+    width: 320px;
+  }
+
+  #titulo {
+    font-size: 1.8rem;
+  }
+
+  form label {
+    font-size: 1.3rem;
+  }
+
+}
