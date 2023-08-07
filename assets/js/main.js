@@ -1,10 +1,8 @@
 function handleKeyDown(event) {
-
   if (event.keyCode === 13) {
     event.preventDefault();
     calcular(); 
 };
-
 }
 
 function calcular() {
@@ -40,31 +38,26 @@ function calcular() {
     divResultado.innerHTML = 'Favor conferir as informaçoes fornecidas!';
     divResultado.style.color = "red";
     divResultado.classList.add('exibir');
-
   }
   else if (resultado >= 40) {
     divResultado.innerHTML = `IMC ${resultado} - ${tipoPeso[5]}`;
     divResultado.style.color = "#FFA500";
     divResultado.classList.add('exibir');
-
   }
   else if (resultado >= 34.99) {
     divResultado.innerHTML = `IMC ${resultado} - ${tipoPeso[4]}`;
     divResultado.style.color = "#FFA500";
     divResultado.classList.add('exibir');
-
   }
   else if (resultado >= 29.99) {
     divResultado.innerHTML = `IMC ${resultado} - ${tipoPeso[3]}`;
     divResultado.style.color = "#FFA500";
     divResultado.classList.add('exibir');
-
   }
   else if (resultado >= 24.99) {
     divResultado.innerHTML = `IMC ${resultado} - ${tipoPeso[2]}`;
     divResultado.style.color = "#FFA500";
     divResultado.classList.add('exibir');
-
   }
   else if (resultado >= 18.5) {
     divResultado.innerHTML = `IMC ${resultado} - ${tipoPeso[1]}`;
@@ -75,10 +68,6 @@ function calcular() {
     divResultado.innerHTML = 'Favor conferir as informaçoes fornecidas!';
     divResultado.style.color = "red";
     divResultado.classList.add('exibir');
-
   }
   console.log(resultado);
 }
-
-
-
